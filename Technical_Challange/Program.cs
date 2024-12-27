@@ -2,10 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 
-class Program
-{
-    static void Main(string[] args)
-    {
+
         Console.WriteLine("Running Challenge 1: File Scanner");
         FileScanner.SearchFiles("C:\\TestFolder", "sample");
 
@@ -13,9 +10,7 @@ class Program
         var collectionA = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
         var collectionS = new List<int> { 5, 15, 3, 19, 35, 50, -1, 0 };
         DuplicateIdentifier<int>.IdentifyDuplicates(collectionA, collectionS);
-    }
-}
-
+   
 public class FileScanner
 {
     public static void SearchFiles(string folderPath, string searchString)
